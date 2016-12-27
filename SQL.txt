@@ -1,0 +1,18 @@
+INSERT INTO [{0}$Currency Exchange Rate]
+           ([Currency Code]
+           ,[Starting Date]
+           ,[Exchange Rate Amount]
+           ,[Adjustment Exch_ Rate Amount]
+           ,[Relational Currency Code]
+           ,[Relational Exch_ Rate Amount]
+           ,[Fix Exchange Rate Amount]
+           ,[Relational Adjmt Exch Rate Amt])
+     VALUES
+           (@Currency_Code
+           ,@Starting_Date
+           ,1
+           ,1
+           ,''
+           ,@ExchangeRate
+           ,0
+           ,@ExchangeRate)
